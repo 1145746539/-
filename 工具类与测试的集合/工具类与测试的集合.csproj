@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E67AF399-5928-4535-8A3D-74A5C8BC880F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>工具类与测试的集合</RootNamespace>
+    <AssemblyName>工具类与测试的集合</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActUtlTypeLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=627cb188e78f967a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\ActUtlTypeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=14.0.0.15, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\简单串口调试\bin\Debug\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\C#\dll\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <HintPath>bin\Debug\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Office">
+      <HintPath>bin\Debug\Interop.Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="LinqToExcel">
+      <HintPath>..\..\dll\LinqToExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>..\..\dll\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>C:\Program Files\System.Data.SQLite\2010\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Util\ModBusTools.cs" />
+    <Compile Include="Util\XmlHelp.cs" />
+    <Compile Include="AlarmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmForm.Designer.cs">
+      <DependentUpon>AlarmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Factory\Circle.cs" />
+    <Compile Include="Factory\IShape.cs" />
+    <Compile Include="Factory\Rectangle.cs" />
+    <Compile Include="Factory\SumAreaFcatory1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListFactory.cs" />
+    <Compile Include="FormList\FactoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormList\FactoryForm.Designer.cs">
+      <DependentUpon>FactoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormList\SingletonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormList\SingletonForm.Designer.cs">
+      <DependentUpon>SingletonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jiyuan\Alarm.cs" />
+    <Compile Include="jiyuan\Capacity.cs" />
+    <Compile Include="jiyuan\DTlogfile.cs" />
+    <Compile Include="jiyuan\production.cs" />
+    <Compile Include="jiyuan\TricolorMonitor.cs" />
+    <Compile Include="jiyuan\Yield.cs" />
+    <Compile Include="jiyuan\YieldMonitor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton\Form_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Singleton\Form_1.Designer.cs">
+      <DependentUpon>Form_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Singleton\Form_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Singleton\Form_2.Designer.cs">
+      <DependentUpon>Form_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TD\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TD\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\AccessHelper.cs" />
+    <Compile Include="Util\AutoSizeFormClass.cs" />
+    <Compile Include="Util\DataOperation.cs" />
+    <Compile Include="Util\ExcelUtil.cs" />
+    <Compile Include="Util\HttpWeb.cs" />
+    <Compile Include="Util\INIHelper.cs" />
+    <Compile Include="Util\MxCommuniUtil.cs" />
+    <Compile Include="Util\SQLiteHelper.cs" />
+    <Compile Include="Util\TDCommuniUtil.cs" />
+    <Compile Include="Util\WriteLogHelper.cs" />
+    <Compile Include="委托事件\ConvertHelper.cs" />
+    <Compile Include="委托事件\DataCache.cs" />
+    <Compile Include="委托事件\DelegateAndEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="委托事件\DelegateAndEvent.Designer.cs">
+      <DependentUpon>DelegateAndEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="委托事件\FormulaExpress.cs" />
+    <Compile Include="委托事件\GridViewHelper.cs" />
+    <Compile Include="委托事件\IpHelper.cs" />
+    <Compile Include="委托事件\MediaHandler.cs" />
+    <Compile Include="委托事件\PageValidate.cs" />
+    <Compile Include="委托事件\PicDeal.cs" />
+    <Compile Include="委托事件\QueryString.cs" />
+    <Compile Include="委托事件\RMB.cs" />
+    <Compile Include="委托事件\StringPlus.cs" />
+    <Compile Include="委托事件\SysHelper.cs" />
+    <Compile Include="委托事件\Tools.cs" />
+    <Compile Include="委托事件\UrlOper.cs" />
+    <Compile Include="委托事件\Utility.cs" />
+    <Compile Include="委托事件\ValidateImg.cs" />
+    <Compile Include="委托事件\WebSitePathHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlarmForm.resx">
+      <DependentUpon>AlarmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormList\FactoryForm.resx">
+      <DependentUpon>FactoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormList\SingletonForm.resx">
+      <DependentUpon>SingletonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Singleton\Form_1.resx">
+      <DependentUpon>Form_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Singleton\Form_2.resx">
+      <DependentUpon>Form_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TD\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="委托事件\DelegateAndEvent.resx">
+      <DependentUpon>DelegateAndEvent.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
