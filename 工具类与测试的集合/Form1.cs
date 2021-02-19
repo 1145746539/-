@@ -13,7 +13,6 @@ namespace 工具类与测试的集合
 {
     public partial class Form1 : Form
     {
-
         public bool IsTegether { get; set; }
         AutoSizeFormClass asc = new AutoSizeFormClass();
 
